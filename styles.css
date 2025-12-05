@@ -1,14 +1,51 @@
 body {background-image: url(Fundo.jpeg); 
-    
-    display: block;
+        width: 300px;
+        height: 400px;
     background-size: contain;
-        background-color: rgb(0,0,0,0.6); background-blend-mode: darken;}
+        background-color: rgb(0,0,0,0.7); background-blend-mode: darken;}
 
-        #PAUSE{font-size: 100px; color: darkblue; background-color: aqua;
-        margin;2px padding: 30px; font-weight:20px;
-        width: 700px;
-        height: 250px;
+        #title{font-family:'Times New Roman', Times, serif;     
+            font-size: 50px; 
+            color:yellow; 
+            background-color: #1e00ffac; margin: 40px ;
+            padding: 3px; font-weight:bolder;
+            width:max-content; height:max-content;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+}
+
+    img{width: 200px;
+        height: auto;
+        position: fixed; 
+        bottom: 0;
+        left: 50%;
     
     }
+        
+#text{font-family:'Times New Roman', Times, serif;     
+            font-size: 20px; 
+            text-align:center;
+            color:#f9f9f9; 
+            background-color: #1e00ffac; margin: 180px ;
+            padding: 3px; font-weight:initial;
+            width:max-content; height:max-content;
+            position: absolute;
+            left: 40%; 
+            transform: translate(-50%, -50%);
 
-        h2:hover{color: red;}
+}
+
+#date{img{}
+    font-family:'Times New Roman', Times, serif;     
+            font-size: 20px; 
+            text-align:center;
+            color:#f9f9f9; 
+            background-color: #1e00ffac; margin: 260px ;
+            padding: 3px; font-weight:initial;
+            width:max-content; height:max-content;
+            position: absolute;
+            left: 40%; 
+            transform: translate(-50%, -50%);
+
+}
