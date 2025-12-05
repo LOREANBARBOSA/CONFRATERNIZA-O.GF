@@ -1,0 +1,72 @@
+/* Fundo da página */
+body {
+    background-image: url(Fundo.jpeg);
+    background-repeat: repeat;           /* repete a imagem em mosaico */
+    background-size: contain;            /* mantém proporção da imagem */
+    background-position: top left;       /* começa no canto superior esquerdo */
+    background-color: rgba(0,0,0,0.7);   /* camada escura */
+    background-blend-mode: darken;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Título */
+#title {
+    font-size: 50px;
+    text-align: center;
+    color: yellow;
+    background-color: #1e00ffac;
+    margin: 40px auto;
+    padding: 10px 20px;
+    font-weight: bolder;
+    width: fit-content;
+    border-radius: 8px;
+}
+
+/* Logo */
+img {
+    width: 200px;
+    height: auto;
+    display:block;
+    margin: 20px auto;
+}
+
+/* Texto principal */
+#text {
+    font-size: 20px;
+    text-align: center;
+    color: #f9f9f9;
+    background-color: #1e00ffac;
+    margin: 30px auto;
+    padding: 15px;
+    font-weight: normal;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+/* Container da data */
+.date-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;                /* espaço entre ícone e texto */
+    margin: 20px auto;
+    background-color: #1e00ffac;
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 8px;
+}
+
+/* Ícone */
+#icon {
+    width: 35px;
+    height: 39px;
+}
+
+/* Texto da data */
+#date {
+    font-size: 20px;
+    color: #f9f9f9;
+    margin: 0;
+}
