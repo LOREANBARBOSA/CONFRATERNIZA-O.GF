@@ -157,7 +157,7 @@ img {
   }
 
   #title {
-    font-size: 28px;       /* menor no celular */
+    font-size: 25px;       /* menor no celular */
     line-height: 1.2;      /* altura da linha ajustada */
     margin-top: 60px;
     padding: 8px 12px;
@@ -193,6 +193,7 @@ img {
     width: 150px;
   }
 }
+
 
 
 
