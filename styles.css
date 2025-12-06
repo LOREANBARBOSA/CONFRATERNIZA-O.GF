@@ -14,6 +14,7 @@ body {
     text-align: center;
 }
 
+
 /* Título */
 #title {
     font-size: 50px;
@@ -32,11 +33,11 @@ body {
 .logo {
     width: 200px;
     height: auto;
-    position: fixed;   /* fixa na tela */
-    top: 0;            /* sempre no topo */
-    left: 50%;         /* centraliza horizontalmente */
-    transform: translateX(-50%); /* corrige centralização */
-    z-index: 1000;     /* garante que fique acima dos outros elementos */
+    position: fixed;   
+    top: 0;            
+    left: 50%;         
+    transform: translateX(-50%); 
+    z-index: 1000;     
 }
 
 img {
@@ -64,7 +65,7 @@ img {
     display:flex;
     justify-content:center;
     align-items:center;
-    gap: 10px;                /* espaço entre ícone e texto */
+    gap: 10px;                
     margin: 20px auto;
     background-color: #1e00ffac;
     padding: 10px 20px;
@@ -72,14 +73,8 @@ img {
     border-radius: 8px;
 }
 
-/* Ícone */
-#icon {
-    width: auto;
-    height: 39px;
-}
-
-/* Ícone de Horário */
-#hora {
+/* Ícones */
+#icon, #hora {
     width: auto;
     height: 39px;
 }
@@ -96,21 +91,20 @@ img {
     display:flex;
     justify-content:center;
     align-items:center;
-    gap: 10px;                /* espaço entre ícone e texto */
+    gap: 10px;                
     margin: 20px auto;
     background-color: #1e00ffac;
     padding: 10px 20px;
     width: fit-content;
     border-radius: 8px;
 }
-/* Texto do local */
+
 #tlocal {
     font-size: 20px;
     color: #f9f9f9;
     margin: 0;
 }
 
-/* Link do Local*/
 #local-link{
     font-size: 20px;
     color: yellow;
@@ -149,4 +143,35 @@ img {
 
 .foto-local:hover {
     transform: scale(1.05);
+}
+
+/* ✅ Ajustes para celulares */
+@media (max-width: 600px) {
+  body {
+    padding: 0 10px; /* respiro lateral */
+  }
+
+  #title,
+  #text,
+  .date-container,
+  .local,
+  .galeria {
+    width: 100%;          
+    max-width: 100%;      
+    margin-left: auto;    
+    margin-right: auto;   
+  }
+
+  .date-container,
+  .local {
+    flex-direction: column; 
+    gap: 5px;               
+    text-align: center;
+  }
+
+  .foto-local {
+    width: 100%; 
+    max-width: 250px; 
+    margin: 0 auto;
+  }
 }
